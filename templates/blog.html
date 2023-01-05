@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> {{ title }} </title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}" >
+    </head>
+
+
+    <h1> Tout va Bien </h1>
+
+    <div class=post>
+        <div class=menu><br>
+            {% if ppage %}
+            <a href="/?p={{ ppage }}&{{ filters }}" style="margin-right: 20px"><<</a>
+            {% endif %}
+            <a href="/">Index</a>
+            {% if npage %}
+            <a href="/?p={{ npage }}&{{ filters }}" style="margin-left: 20px">>></a>
+            {% endif %}
+        </div>
+        {% for entry in entries %}
+            <h2> {{ entry.title }} </h2>
+            <div class=post-body>
+                {% if entry.url %}
+                <h3><a href="{{ entry.url }}">~ {{ entry.name }} ~</a></h3>
+                {% else %}
+                <h3>{{ entry.name }}</h3>
+                {% endif %}
+                <br>
+                {% if entry.img %}
+                <div class=image-cropper>
+                    <a href="{{ entry.img }}">
+                        <img class=post-img src="{{ entry.img }}" style="left: {{ entry.xpos }}px;">
+                    </a>
+                </div>
+                {% endif %}
+                {% for l in entry.body %}
+                    {{ l }}<br>
+                {% endfor %}
+                <br><br>
+                <div class=tags>
+                {% for tag in entry.tags %}
+                <a href="/?fi={{ tag }}">{{ tag }}</a>,
+                {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        <div class=bottitle> Au fond, il y a la ligne de fond</div>
+    </div>
+
+</html>

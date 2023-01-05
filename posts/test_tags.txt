@@ -1,0 +1,3 @@
+#tags=oui
+
+Sert à tester les tags

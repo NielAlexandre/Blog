@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> {{ title }} </title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}" >
+    </head>
+
+    <h1>{{ res }}</h1>
+    <div class=post>
+        <ul style="padding: 50px">
+        {% for entry in entries %}
+            <li style="margin: 25px"> {{ entry }} </li>
+        {% endfor %}
+        </ul>
+
+    <div class=bottitle> Au fond, il y a la ligne de fond</div>
+    </div>
+
+</html>

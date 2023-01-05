@@ -1,0 +1,135 @@
+
+html {
+    text-align: center;
+    background: #400070;
+    background: url(bg.gif);
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    font-family: "Monospace";
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 57px;
+    text-shadow: -5px 0px 5px #CF85F9,
+        5px 0px 5px #CF85F9;
+}
+
+h2 {
+    color: #CF85F9;
+    border-radius: 5em 1.5em 0 1.5em ;
+    background: rgb(79, 6, 122, 0.9);
+    width: 35em;
+    height: 3em;
+    margin: 0.5em 3px -2em -2em;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    font-size: 22;
+    text-shadow: -1px 0px 1px #000,
+        1px 0px 1px #000;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    background: linear-gradient(to left, #CF85F9, rgba(79, 6, 122), #CF85F9);
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    text-shadow: -1px 0px 1px #CF85F9,
+        1px 0px 1px #CF85F9;
+}
+
+.post {
+    color: white;
+    text-align: center;
+    border-radius: 5em 5em 0 0em ;
+    border-top: 5px double white;
+    background: rgba(162, 21, 244, 0.25);
+    max-width: 55em;
+    padding-top: 5em;
+    margin-left: 25%;
+}
+
+.subtitle {
+    text-align: center;
+    color:white;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    min-width: 100%;
+    text-align:center;
+    text-shadow: -1px 0px 1px #CF85F9,
+        1px 0px 1px #CF85F9;
+}
+
+.bottitle {
+    color:white;
+    max-width: 55em;
+    margin: -5px auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    min-height: 100%;
+    text-align:center;
+    text-shadow: -1px 0px 1px #CF85F9,
+        1px 0px 1px #CF85F9;
+}
+
+.tags {
+    text-align:right;
+    color: #6B2830;
+    font-style: italic;
+    font-size: 10px;
+    height: 100%;
+}
+
+.post-body {
+    text-align: center;
+    overflow: auto;
+    background: #CF85F9;
+    text-align: justify;
+    margin: 0 2em 0 2em;
+    padding: 1em;
+}
+
+.menu {
+    background: linear-gradient(to bottom, rgba(162, 21, 244, 0), rgb(79, 6, 122), rgb(79, 6, 122), rgb(79, 6, 122));
+    color: white;
+    min-width: 100%;
+    z-index: 50;
+    text-align:center;
+    text-shadow: -1px 0px 1px #000,
+        1px 0px 1px #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1em;
+    border-radius: 0em 0em 5em 5em ;
+    border-bottom: 5px double white;
+    padding-bottom: 0.2em;
+}
+
+.image-cropper {
+    z-index: 30;
+    width: 150px;
+    height: 250px;
+    margin-right: 2em;
+    border: 1px solid white;
+    overflow: hidden;
+    float: left;
+}
+
+img {
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon {
+    width:20px;
+    height:20px;
+}
+
+a { color: inherit }
+
+th { text-align: center }
